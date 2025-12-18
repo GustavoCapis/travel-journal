@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+}
+
+.header {
+  background-color:#F55A5A ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 55px;
+}
+
+.header-icon {
+  height: 24px;
+  width: 24px;
+  margin-right: 7px;
+}
+
+.header-title {
+ color:#FFFFFF ; 
+ font-size: 15px;
+ font-weight: 500;
+ font-family: Inter;
+}
