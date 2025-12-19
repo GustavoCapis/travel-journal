@@ -1,13 +1,15 @@
 * {
   box-sizing: border-box;
+  font-family: Inter;
 }
 
-html, body {
-    margin: 0;
+html,
+body {
+  margin: 0;
 }
 
 .header {
-  background-color:#F55A5A ;
+  background-color: #f55a5a;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,8 +23,58 @@ html, body {
 }
 
 .header-title {
- color:#FFFFFF ; 
- font-size: 15px;
- font-weight: 500;
- font-family: Inter;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: Inter;
+}
+
+.entry {
+  display: flex;
+}
+
+.place-image {
+  width: 125px;
+  height: 168px;
+  overflow: hidden;
+  margin: 100px 19px 36px 40px;
+}
+
+.marker-icon {
+  width: 7px;
+}
+
+.country-name {
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  margin-right: 12px;
+}
+
+.info-container {
+  margin: 100px 40px 36px 0px;
+}
+
+.info-container a {
+  color: #2b283a;
+  font-size: 0.7rem;
+}
+
+.info-container a:visited {
+  color: #918e9b;
+}
+
+.info-container h1.entry-title {
+  margin-top: 7px;
+  margin-bottom: 17px;
+}
+
+.info-container p.trip-dates {
+  font-weight: bold;
+  font-size: 11px;
+}
+
+.info-container p.entry-text {
+  line-height: 1.5;
+  font-size: 0.8rem;
+  overflow: hidden;
 }
