@@ -1,57 +1,64 @@
-* {
-  box-sizing: border-box;
-  font-family: Inter;
-}
-
 html,
 body {
   margin: 0;
 }
 
-.header {
-  background-color: #f55a5a;
+body {
+  font-family: Inter;
+}
+
+.container {
+  margin: 45px 40px;
+}
+
+header {
+  background: #f55a5a;
   display: flex;
   justify-content: center;
   align-items: center;
+  color: white;
   height: 55px;
 }
 
-.header-icon {
-  height: 24px;
+header > img {
   width: 24px;
   margin-right: 7px;
 }
 
-.header-title {
-  color: #ffffff;
-  font-size: 15px;
+header > h1 {
+  font-size: 0.9rem;
   font-weight: 500;
-  font-family: Inter;
 }
 
-.entry {
+article.journal-entry {
   display: flex;
+  margin-bottom: 36px;
 }
 
-.place-image {
+article.journal-entry .marker {
+  width: 7px;
+  margin-right: 4px;
+}
+
+article.journal-entry .main-image-container {
   width: 125px;
   height: 168px;
   overflow: hidden;
-  margin: 100px 19px 36px 40px;
+  border-radius: 5px;
+  flex-shrink: 0;
+  margin-right: 19px;
 }
 
-.marker-icon {
-  width: 7px;
+article.journal-entry .main-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
-.country-name {
+.info-container span.country {
   text-transform: uppercase;
   font-size: 0.7rem;
   margin-right: 12px;
-}
-
-.info-container {
-  margin: 100px 40px 36px 0px;
 }
 
 .info-container a {
@@ -63,18 +70,18 @@ body {
   color: #918e9b;
 }
 
-.info-container h1.entry-title {
+.info-container h2.entry-title {
   margin-top: 7px;
   margin-bottom: 17px;
 }
 
 .info-container p.trip-dates {
   font-weight: bold;
-  font-size: 11px;
 }
 
 .info-container p.entry-text {
   line-height: 1.5;
   font-size: 0.8rem;
+  display: -webkit-box;
   overflow: hidden;
 }

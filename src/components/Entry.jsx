@@ -7,7 +7,7 @@ export default function Entry(props) {
       <div className="info-container">
         <img
           className="marker"
-          src="../images/marker.png"
+          src="/src/imgs/marker.png"
           alt="map marker icon"
         />
         <span className="country">{props.country}</span>
