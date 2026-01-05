@@ -6,13 +6,8 @@ export default function App() {
   const journalData = data.map((data) => {
     return (
       <Entry
-        id={data.id}
-        img={data.img}
-        title={data.title}
-        country={data.country}
-        googleMapsLink={data.googleMapsLink}
-        dates={data.dates}
-        text={data.text}
+        key={data.id}
+        data={data}
       />
     );
   });
